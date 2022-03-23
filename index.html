@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign-Up Form</title>
+</head>
+<body>
+    <section>
+        <h2>
+            This is not a real service. Create yet another account for yet another service that you don't need but will change your life. 
+            <br>
+            <br>
+            Give us your information now!
+        </h2>
+        <form action="">
+            <fieldset>
+                <legend>Let's Do Something</legend>
+                <div id="name_group">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" name="first_name">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" name="last_name">
+                </div>
+                <div id="contact_group">
+                    <label for="user_email">Email Address</label>
+                    <input type="email" id="user_email" name="email" placeholder="you@example.com">
+                    <label for="phone_number">Phone Number</label>
+                    <input type="text" id="phone_number" name="phone_number" placeholder="(800)555-5555" pattern="^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$">
+                </div>
+                <div id="password_group">
+                    <label for="user_password">Password</label>
+                    <input type="password" id="user_password" name="password">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password">
+                </div>
+            </fieldset>
+            <button type="submit">Create Account</button>
+        </form>
+        <div>Already have an account? Log in</div>
+    </section>
+</body>
+</html>
