@@ -5,41 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Sign-Up Form</title>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/yahfie" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/station" type="text/css"/>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/letterng" type="text/css"/>    <title>Sign-Up Form</title>
 </head>
 <body>
-    <section>
+    <div class="sidebar">
+        <h3>King of Clubs</h3>
+        <img src="./src/no_stem_clover.png" alt="four-leaf clover">
+    </div>
+    <section id="main">
         <h2>
             This is not a real service. Create yet another account for yet another service that you don't need but will change your life. 
             <br>
             <br>
-            Give us your information now!
         </h2>
         <form action="">
             <fieldset>
-                <legend>Let's Do Something</legend>
+                <legend>Sign Up Now!</legend>
                 <div id="name_group">
-                    <label for="first_name">First Name</label>
-                    <input type="text" id="first_name" name="first_name">
-                    <label for="last_name">Last Name</label>
-                    <input type="text" id="last_name" name="last_name">
+                    <div id="first_name_group">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name">
+                    </div>
+                    <div id="last_name_group">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name">
+                    </div>
                 </div>
                 <div id="contact_group">
-                    <label for="user_email">Email Address</label>
-                    <input type="email" id="user_email" name="email" placeholder="you@example.com">
-                    <label for="phone_number">Phone Number</label>
-                    <input type="text" id="phone_number" name="phone_number" placeholder="(800)555-5555" pattern="^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$">
+                    <div id="email_group">
+                        <label for="user_email">Email Address</label>
+                        <input type="email" id="user_email" name="email" placeholder="you@example.com">
+                    </div>
+                    <div id="phone_group">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="text" id="phone_number" name="phone_number" placeholder="(800)555-5555" pattern="^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$">
+                    </div>
                 </div>
                 <div id="password_group">
-                    <label for="user_password">Password</label>
-                    <input type="password" id="user_password" name="password">
-                    <label for="confirm_password">Confirm Password</label>
-                    <input type="password" id="confirm_password" name="confirm_password">
+                    <div id="user_password_group">
+                        <label for="user_password">Password</label>
+                        <input type="password" id="user_password" name="password">
+                    </div>
+                    <div id="confirm_password_group">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" id="confirm_password" name="confirm_password">
+                    </div>
                 </div>
             </fieldset>
             <button type="submit">Create Account</button>
         </form>
-        <div>Already have an account? Log in</div>
+        <div id="main-footer">Already have an account? Log in</div>
     </section>
 </body>
 </html>
