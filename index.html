@@ -7,53 +7,61 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/yahfie" type="text/css"/>
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/station" type="text/css"/>
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/letterng" type="text/css"/>    <title>Sign-Up Form</title>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/letterng" type="text/css"/>
+    <title>Sign-Up Form</title>
 </head>
 <body>
-    <div class="sidebar">
-        <h3>King of Clubs</h3>
-        <img src="./src/no_stem_clover.png" alt="four-leaf clover">
+    <div id="sidebar">
+        <div id="sidebar-content">
+            <h3 id="sidebar-title">King of Clubs</h3>
+            <img src="./src/images/icons/no_stem_clover.png" alt="four-leaf clover">
+        </div>
+        <div class="attribution"><a href="https://www.freepik.com/free-vector/elegant-golden-lines-dark-black-background_7766330.htm?query=vip%20background">Background by starline - www.freepik.com</a></div>
     </div>
     <section id="main">
-        <h2>
-            This is not a real service. Create yet another account for yet another service that you don't need but will change your life. 
+        <div class="copy">
+            This is not a real online service! You know you want something else to help you through this kind of life. Sign up <em>now</em> to get started.
             <br>
             <br>
-        </h2>
+            You <em>know</em> you want to.
+            <br>
+            <br>
+        </div>
         <form action="">
             <fieldset>
                 <legend>Sign Up Now!</legend>
-                <div id="name_group">
-                    <div id="first_name_group">
-                        <label for="first_name">First Name</label>
-                        <input type="text" id="first_name" name="first_name">
+                <div id="name-row" class="form-row">
+                    <div id="first-name-group" class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name">
                     </div>
-                    <div id="last_name_group">
-                        <label for="last_name">Last Name</label>
-                        <input type="text" id="last_name" name="last_name">
-                    </div>
-                </div>
-                <div id="contact_group">
-                    <div id="email_group">
-                        <label for="user_email">Email Address</label>
-                        <input type="email" id="user_email" name="email" placeholder="you@example.com">
-                    </div>
-                    <div id="phone_group">
-                        <label for="phone_number">Phone Number</label>
-                        <input type="text" id="phone_number" name="phone_number" placeholder="(800)555-5555" pattern="^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$">
+                    <div id="last-name-group" class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name">
                     </div>
                 </div>
-                <div id="password_group">
-                    <div id="user_password_group">
-                        <label for="user_password">Password</label>
-                        <input type="password" id="user_password" name="password">
+                <div id="contact-row" class="form-row">
+                    <div id="email-group" class="form-group">
+                        <label for="user-email">Email Address</label>
+                        <input type="email" id="user-email" name="email" placeholder="you@example.com">
                     </div>
-                    <div id="confirm_password_group">
-                        <label for="confirm_password">Confirm Password</label>
-                        <input type="password" id="confirm_password" name="confirm_password">
+                    <div id="phone-group" class="form-group">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="text" id="phone-number" name="phone-number" placeholder="(800)555-5555" pattern="^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$">
+                    </div>
+                </div>
+                <div id="password-row" class="form-row">
+                    <div id="user-password-group" class="form-group">
+                        <label for="user-password">Password</label>
+                        <input type="password" id="user-password" name="password">
+                    </div>
+                    <div id="confirm-password-group" class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" name="confirm-password">
                     </div>
                 </div>
             </fieldset>
+            <hr>
             <button type="submit">Create Account</button>
         </form>
         <div id="main-footer">Already have an account? Log in</div>

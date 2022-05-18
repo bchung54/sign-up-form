@@ -1,48 +1,90 @@
+@font-face {font-family: Glamore; src: url(./src/fonts/Glamore-JRVvK.otf)}
+
+@font-face {font-family: MainFont; src: url(./src/fonts/avenuex.regular.otf)}
+
+@font-face {font-family: CopyFont; src: url(./src/fonts/fenwick-outline-free.outline-regular.otf)}
+
 body {
+    background-color: rgb(39, 36, 36);
     display: flex;
-    align-items: center;
-    background-image: url(src/nicholas-sampson-unsplash.jpg);
-    background-size: cover;
-    background-position: 0 -450px;
     height: 100vh;
-    font-family: 'letterngmedium';
-    font-weight: normal;
-    font-style: normal;
 }
 
-.sidebar {
+/* Sidebar */
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 100vh;
+    width: 30vw;
+    font-size: 60px;
+    background-image: url(./src/images/backgrounds/elegant-golden-lines-dark-black-background/24784.jpg);
+    background-size: cover;
+    background-position: 70%;
+}
+
+#sidebar-content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40vh;
-    font-family: 'StationMedium';
-    font-size: 68px;
+    font-family: Glamore;
+    background-color: rgba(253, 218, 60, 0.747);
+    color: black;
+    margin-top: 700px;
+}
+
+#sidebar-title {
+    margin: 20px;
 }
 
 img {
-    width:150px;
+    width:80px;
+    margin-bottom: 20px;
 }
 
+.attribution {
+    background-color: black;
+    text-align: center;
+    margin: 0;
+}
+
+.attribution > a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: MainFont;
+}
+
+/* Form */
 #main {
-    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60vw;
+    color: goldenrod;
+    font-size: 40px;
+    font-family: YahfieNormal;
     padding: 50px 150px;
-    background-color: white;
-    height: 70vh;
-    width: 60vh;
+}
+
+.copy {
+    font-family: CopyFont; 
+    text-align: center;
+    color: #FF10F0;
 }
 
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
+
 }
 
 fieldset {
     display: flex;
     flex-direction: column;
-    font-family: 'YahfieNormal';
-    align-items: stretch;
+    width: 80%;
     border: 0;
     padding: 0;
 }
@@ -56,7 +98,7 @@ fieldset>div {
 fieldset>div>div {
     display: flex;
     flex-direction: column;
-    width: 200%;
+    width: 80%;
     padding: 12px;
 }
 
@@ -65,15 +107,34 @@ input {
     line-height: 30px;
 }
 
+input:focus {
+    border-color: #FF10F0;
+    outline: 0;
+    box-shadow: 0 0 4px 4px rgba(247, 0, 255, 0.705);
+}
+
 button {
-    height: 40px;
-    width: 250px;
-    font-size: 30px;
+    height: 80px;
+    width: 350px;
+    font-size: 36px;
+    font-family: CopyFont;
+    background-color: #FF10F0;
+    color: black;
+}
+
+::placeholder {
+    font-family: YafieNormal;
+    font-style: italic;
+}
+
+hr {
+    width: 100%;
+    border-color: goldenrod;
+    border-width: 4px;
 }
 
 #main-footer {
-    font-size: 20px;
-    font-family: 'YahfieNormal';
+    font-size: 28px;
     text-align: center;
     padding: 20px;
 }
